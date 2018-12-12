@@ -33,7 +33,8 @@ Here you can find all the endpoints and what they are used for:
 /api/retailer/{id} - retailer and his products - api reatailer and products
 
 
-#tests
+<h2>#tests</h2>
+
 I Haven't done it yet..  still in progress  :(
 
 
