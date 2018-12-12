@@ -31,14 +31,14 @@ class Products extends Model
     /**
      * @var array
      */
-    protected $fillable = ['idretailer', 'name', 'price', 'image_path', 'description', 'created_at', 'updated_at', 'slug', 'status'];
+    protected $fillable = ['idretailer', 'name', 'price', 'image_path', 'description', 'created_at', 'updated_at', 'slug', 'status', 'idretailer'];
 
     /**
      * @return \Illuminate\Database\Eloquent\Relations\BelongsTo
      */
     public function retailer()
     {
-        return $this->belongsTo('App\Models\Retailer', 'idretailer', 'idretailer');
+        return $this->belongsTo('App\Models\Retailers', 'idretailer', 'idretailer');
     }
 
     /**

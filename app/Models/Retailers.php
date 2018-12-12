@@ -39,7 +39,7 @@ class Retailers extends Model
      */
     public function products()
     {
-        return $this->hasMany('App\Product', 'idretailer', 'idretailer');
+        return $this->hasMany('App\Models\Products', 'idretailer', 'idretailer');
     }
 
     /**

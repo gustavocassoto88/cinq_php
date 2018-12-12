@@ -114,3 +114,52 @@
 	padding-top: 5px;
 	text-align: right;
 }
+
+.retail-name{
+	float: left;
+	width: 100%;
+	background-color: #dedede;
+	margin-top: 15px;
+}
+
+.retail-name img{
+	float: left;
+	margin: 15px 15px 0px 0px;
+}
+
+.send-mail{
+	float: left;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.small-text{
+	background-color: #66ABE0;
+	padding: 5px;
+	text-align: center !important;
+	color: #FFF !important;
+	border-radius: 10px;
+}
+
+.notification{
+	float: left;
+	width: 100%;
+	padding: 10px 0px 0px 10px;
+	margin-bottom: 10px;
+ }
+ 
+.info-success {   
+	background-color: #b1ff9d;  
+	border: 1px solid #7ff161;   
+}
+ 
+.info-error {   
+	background-color: #ffb8b8;  
+	border: 1px solid #f16161;   
+}
+ 
+.notification p{
+	color: #000;
+}
+ 

@@ -15,47 +15,46 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Products List</a>
+                    <a class="nav-link" href="#">Retailers List</a>
                 </li>
             </ul>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="btn btn-info" href="/products/create">New Product</a>
+                    <a class="btn btn-info" href="/retailers/create">New Retailer</a>
                 </li>
             </ul>
         </div>
     </div>
 </nav>
-<h2>Products List</h2>
-<table id="products-table" class="display" style="width:100%">
+<h2>Retailers List</h2>
+<table id="retailer-table" class="display" style="width:100%">
     <thead>
         <tr>
-            <th>Image</th>
+            <th>Logo</th>
             <th>Name</th>
-            <th>Price</th>
-            <th>Retailer Name</th>
+            <th>WebSite</th>            
             <th>Edit</th>
             <th>Delete</th>
         </tr>
     </thead>
     <tbody>
-        @foreach($products as $key => $product)
+        @foreach($retailers as $key => $retailer)
             <tr>
                 <td>
-                    <img src="/uploads/products/{!! $product->image_path !!}" width="50px" alt="{!! $product->name !!}" title="{!! $product->name !!}" />
+                    <img src="/uploads/retailers/{!! $retailer->image_path !!}" width="50px" alt="{!! $retailer->name !!}" title="{!! $retailer->name !!}" />
                 </td>
-                <td>{!! $product->name !!}</td>
-                <td>{!! $product->price !!}</td>
-                <td>{!! $product->retailer->name !!}</td>
+                <td>{!! $retailer->name !!}</td>
                 <td>
-                    <a href="/products/edit/{!! $product->idproduct !!}" class="btn btn-warning rounded">
+                    <a href="{!! $retailer->website !!}" target="_blank">{!! $retailer->name !!} Website </td>                
+                <td>
+                    <a href="/retailers/edit/{!! $retailer->idretailer !!}" class="btn btn-warning rounded">
                     <i class="fas fa-edit"></i>
                     </a>
                 </td>
                 <td>
-                    <a href="/products/delete/{!! $product->idproduct !!}" class="btn btn-danger rounded">
+                    <a href="/retailers/delete/{!! $retailer->idretailer !!}" class="btn btn-danger rounded">
                     <i class="fas fa-trash-alt"></i>
                     </a>
                 </td>
@@ -64,10 +63,9 @@
     </tbody>
     <tfoot>
         <tr>
-            <th>Image</th>
+            <th>Logo</th>
             <th>Name</th>
-            <th>Price</th>
-            <th>Retailer Name</th>
+            <th>WebSite</th>            
             <th>Edit</th>
             <th>Delete</th>
         </tr>
@@ -78,7 +76,7 @@
 <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
-        $('#products-table').DataTable();
+        $('#retailer-table').DataTable();
     } );
 </script>
 @endsection
