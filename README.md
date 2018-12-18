@@ -6,7 +6,7 @@ To run this project you must have:
     
     - MySql Server (if you wish to run it locally)
     
-    - php_gd2 extension enabled (just remove the ";" before the line ;extension=php_gd2.dll on your php.ini) it is used to the handle the images when upload it.
+    - php_gd2 extension enabled (just remove the ";" before the line ;extension=php_gd2.dll on your php.ini) it is used to handle the images when upload it.
     
 <h2>#Start:</h2>
 
