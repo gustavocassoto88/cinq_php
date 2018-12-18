@@ -1,8 +1,13 @@
 <h2>#Requirements:</h2>
+
 To run this project you must have:
+
     - php 5.6 or latest version
+    
     - MySql Server (if you wish to run it locally)
+    
     - php_gd2 extension enabled (just remove the ";" before the line ;extension=php_gd2.dll on your php.ini) it is used to the handle the images when upload it.
+    
 <h2>#Start:</h2>
 
 Before start to use the application you must clone this repo, after that go to project root folder and run the command "composer update" it will install all the components necessary for the application.
